@@ -14,7 +14,7 @@ const database = new sqlite.Database('course_score.db', (err) => {
 // 创建表
 method.createTable(database, 'course_score', util.tableCol);
 // 插入数据
-method.insertData(database, 'course_score');
+method.insertData(database, 'course_score', util.tableData);
 // 单条查询
 // database.get("select * from COMPANY;", [], (err, row) => {
 //     if (err) {
